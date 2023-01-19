@@ -3,5 +3,6 @@
 **《Rebel of the Sands》**
 
 ```
-cd ../lab2/images
+<img src="../lab2/images/for use.jpg">
+
 ```
