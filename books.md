@@ -2,4 +2,6 @@
 **《Harry Potter》**
 **《Rebel of the Sands》**
 
-../lab2/images
+```
+cd ../lab2/images
+```
