@@ -34,6 +34,22 @@ tasks are comparable.  Here are the tasks:
 5. check **git status** (see [course book
    4.4.1](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-situational-awareness)).
    Show below, in _block quote_, what does it print.
+
+```
+   Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.Rhistory
+	books.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
    
    Explain, in plain text, what does it mean.
    
@@ -41,23 +57,45 @@ tasks are comparable.  Here are the tasks:
   4.4.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-adding)).
   Show your command (as a
   code block).
+  
+```
+  git add .
+```
 
 7. Was your add successful?  Check status again!  Explain what do you
    see.
+   Your branch is up to date with 'origin/main'.
+
+```
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .Rhistory
+	new file:   books.md
+	modified:   readme.md
+```  
    
 8. Now **commit** your changes (see [course book
    4.4.4](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-committing)). 
    Put your command underneath in a code block.
    
+```
+ git commit -am "changes"
+```
+
 9. Was your commit successful?  How can you check it?  Show your
    command(s) as a code block and explain what you see!
+
+```
+git status
+```
    
 10. Now **push** your changes to Github (see [course book 4.4.5](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-pushing)).  You may
    need to create access token before you are able to push.
    
 11. Go to your github page.  Can you see the books.md file there with
     all the books listed?
-
+    
+    Yes
 
 ## Folders and relative path
 
@@ -72,14 +110,37 @@ This task is about adding images and using relative path.
    
 3. check git status.  What do you see?
 
+   On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	images/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
 4. add image to the repo.  Show the command you are using in a code
    block.
+   
+```
+git add .
+```
    
 5. check status again.  Does it indicate that the image has been
    added?
    
+   Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   images/2.jpg
+   
+   Yes.
+   
 6. what is the relative path of your image if you start walking there
    from the location of your books.md file?
+   
+   images/2.jpg
    
    You can check if the path is correct with something like `ls
    path-to/file`, e.g.
@@ -96,4 +157,4 @@ This task is about adding images and using relative path.
 9. push
 
 10. check on github--does your books.md file now contain the image?
-
+   Yes. 
