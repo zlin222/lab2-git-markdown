@@ -2,5 +2,5 @@
 **《Harry Potter》**
 **《Rebel of the Sands》**
 
-![Image](/images/2.jpg)
+![Image](images/2.jpg)
 
