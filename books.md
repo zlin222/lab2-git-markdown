@@ -3,4 +3,4 @@
 **《Rebel of the Sands》**
 
 
-../lab2/images/for use.jpg
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
